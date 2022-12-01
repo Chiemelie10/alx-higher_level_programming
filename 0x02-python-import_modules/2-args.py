@@ -10,7 +10,7 @@ if __name__ == '__main__':
     if num_of_args == 1:
         print("{} arguement:".format(num_of_args))
     elif num_of_args < 1:
-        print("{} arguement.".format(num_of_args))
+        print("{} arguements.".format(num_of_args))
     else:
         print("{} arguements:".format(num_of_args))
     arg_position = 0
