@@ -2,6 +2,9 @@
 def print_matrix_integer(matrix=[[]]):
     """Prints a matrix of integers"""
 
+    if not matrix:
+        return None
+
     if matrix == [[]]:
         print()
     else:
