@@ -5,13 +5,10 @@ def best_score(a_dictionary):
     if not a_dictionary:
         return None
 
-    # max_key = max(a_dictionary)
-
-    prev = 0
-
+    prev_max = 0
     for k, v in a_dictionary.items():
-        curr = v
-        if curr > prev:
+        curr_val = v
+        if curr_val > prev_max:
             max_key = k
-        prev = curr
+            prev_max = curr_val
     return max_key
