@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     """Converts a Roman numeral to an integer"""
-    
-    if roman_string == None:
+
+    if roman_string is None:
         return 0
 
     dictionary = {
