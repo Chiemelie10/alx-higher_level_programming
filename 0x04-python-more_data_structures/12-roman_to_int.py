@@ -2,7 +2,10 @@
 def roman_to_int(roman_string):
     """Converts a Roman numeral to an integer"""
 
-    if roman_string is None or not roman_string:
+    if roman_string is None:
+        return 0
+
+    if not roman_string:
         return 0
 
     dictionary = {
