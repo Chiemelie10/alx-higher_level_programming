@@ -7,13 +7,11 @@ def best_score(a_dictionary):
 
     # max_key = max(a_dictionary)
 
-    i = 0
+    prev = 0
+
     for k, v in a_dictionary.items():
-        if i == 0:
-            max_value = v
+        curr = v
+        if curr > prev:
             max_key = k
-        if v > max_value:
-            max_value = v
-            max_key = k
-        i += 1
+        prev = curr
     return max_key
